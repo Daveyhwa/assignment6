@@ -5,4 +5,11 @@ export class Satellite {
 	operational: boolean;
 	launchDate: string;
 	constructor(name: string, type: string, launchDate: string, orbitType: string, operational: boolean) {}
+	shouldShowWarning() {
+		if (this.type.toLowerCase() == 'space debris') {
+			return true;
+		} else {
+			return false;
+		}
+	}
 }
