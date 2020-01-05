@@ -1,6 +1,7 @@
 <app-orbit-list [satellites]='sourceList'></app-orbit-list>
 <div class="search-form">
-        <input ng-keyup="search(searchTerm.value).searchterm">
+    <input ng-keyup="search(searchTerm.value).searchterm">
+    <button ng-click="search(searchTerm.value)"></button>
 </div>
 
 
